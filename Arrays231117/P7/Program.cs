@@ -36,8 +36,33 @@ namespace P7
                 matrixDir[i, 1] = columns[1];
             }
 
-            PrintMatrix(matrix);
-            PrintMatrix(matrixDir);
+            int sum = 0;
+            int currrentPos = matrix[n, m];
+            for (int i = 0; i < direct; i++)
+            {
+                if (matrixDir[i, 0] == "RU" || matrixDir[i, 0] == "UR")
+                {
+                    for (int j = 0; j < int.Parse(matrixDir[i, 1]); j++)
+                    {
+                        sum += matrix[];
+                    }
+                }
+                else if (matrixDir[i, 0] == "LU" || matrixDir[i, 0] == "UL")
+                {
+
+                }
+                else if (matrixDir[i, 0] == "DL" || matrixDir[i, 0] == "LD")
+                {
+
+                }
+                else if (matrixDir[i, 0] == "DR" || matrixDir[i, 0] == "RD")
+                {
+
+                }
+            }
+
+            //PrintMatrix(matrix);
+            //PrintMatrix(matrixDir);
         }
 
         private static void PrintMatrix(int[,] matrix)
@@ -48,7 +73,7 @@ namespace P7
                 {
                     if (j != matrix.GetLength(1))
                     {
-                        Console.Write(matrix[i, j]+" ");
+                        Console.Write(matrix[i, j] + " ");
                     }
                     else
                     {

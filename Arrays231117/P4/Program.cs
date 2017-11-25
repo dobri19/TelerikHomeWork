@@ -21,10 +21,12 @@ namespace P4
 
             if (searchedIndex > -1)
             {
+                Console.WriteLine(searchedIndex);
                 Console.WriteLine("The largest number <= {0} is {1}.", k, input[searchedIndex]);
             }
             else
             {
+                Console.WriteLine(searchedIndex);
                 Console.WriteLine("No number <= {0} was found.", k);
             }
         }

@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "С08Irina", "С08Irina\С08
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "S08ExtractDots", "S08ExtractDots\S08ExtractDots.csproj", "{72F292A4-66E5-4452-9683-0E0D3D7DDB55}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "S19Canada", "S19Canada\S19Canada.csproj", "{EE6791A3-AD69-4912-9CFF-00F7624E1C7C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{72F292A4-66E5-4452-9683-0E0D3D7DDB55}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{72F292A4-66E5-4452-9683-0E0D3D7DDB55}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{72F292A4-66E5-4452-9683-0E0D3D7DDB55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE6791A3-AD69-4912-9CFF-00F7624E1C7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE6791A3-AD69-4912-9CFF-00F7624E1C7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE6791A3-AD69-4912-9CFF-00F7624E1C7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE6791A3-AD69-4912-9CFF-00F7624E1C7C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

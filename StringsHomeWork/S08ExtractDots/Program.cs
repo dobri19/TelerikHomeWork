@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Linq;
+using System.Text;
 
-namespace S08Extract
+namespace S08ExtractDots
 {
     public class Program
     {
@@ -11,15 +11,23 @@ namespace S08Extract
         {
             string word = Console.ReadLine();
             string text = Console.ReadLine();
+
             StringBuilder builder = new StringBuilder();
-            //List<string> sentences = text.Split(new char[] { '.' }, StringSplitOptions.RemoveEmptyEntries).ToList();
             List<string> sentences = text.Split('.').ToList();
-            char[] separators = text.Where(c => !char.IsLetter(c)).Distinct().ToArray();
+
+            List<char> separators = new List<char>();
+            for (int i = 0; i < text.Length; i++)
+            {
+                if (!char.IsLetter(text[i]) && !separators.Contains(text[i]))
+                {
+                    separators.Add(text[i]);
+                }
+            }
+            char[] separatorsArray = separators.ToArray();
 
             foreach (string sentence in sentences)
             {
-                //List<string> words = sentence.Split(new char[] { ' ', ',', '-', ';', ':' }, StringSplitOptions.RemoveEmptyEntries).ToList();
-                List<string> words = sentence.Split(separators, StringSplitOptions.RemoveEmptyEntries).ToList();
+                List<string> words = sentence.Split(separatorsArray, StringSplitOptions.RemoveEmptyEntries).ToList();
                 if (words.Contains(word))
                 {
                     builder.Append(sentence.Trim() + ". ");

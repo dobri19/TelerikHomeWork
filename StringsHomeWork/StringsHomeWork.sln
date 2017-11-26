@@ -25,6 +25,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "S15ReplaceTags", "15Replace
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "S23Series", "S23Series\S23Series.csproj", "{340FC0D7-6B97-459B-A316-7782AA158A50}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "С08Irina", "С08Irina\С08Irina.csproj", "{1A39F694-8017-461D-BE8A-EBE527378EE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "S08ExtractDots", "S08ExtractDots\S08ExtractDots.csproj", "{72F292A4-66E5-4452-9683-0E0D3D7DDB55}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +79,14 @@ Global
 		{340FC0D7-6B97-459B-A316-7782AA158A50}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{340FC0D7-6B97-459B-A316-7782AA158A50}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{340FC0D7-6B97-459B-A316-7782AA158A50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A39F694-8017-461D-BE8A-EBE527378EE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A39F694-8017-461D-BE8A-EBE527378EE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A39F694-8017-461D-BE8A-EBE527378EE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A39F694-8017-461D-BE8A-EBE527378EE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72F292A4-66E5-4452-9683-0E0D3D7DDB55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72F292A4-66E5-4452-9683-0E0D3D7DDB55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72F292A4-66E5-4452-9683-0E0D3D7DDB55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72F292A4-66E5-4452-9683-0E0D3D7DDB55}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

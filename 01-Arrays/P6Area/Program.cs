@@ -5,42 +5,41 @@ namespace P6Area
 {
     public class Program
     {
-        static int bestLength = 0, bestNumber = 0;
-        static int currentLength = 0, currentNumber = 0;
+        static int bestLength = 0;
+        static int bestNumber = 0;
+        static int currentLength = 0;
+        static int currentNumber = 0;
+        static int rows;
+        static int cols;
+        // static bool[,] isVisited;
 
-        public static void Main(string[] args)
+        public static void Main()
         {
-            string dimensions = Console.ReadLine();
-            int[] arrDim = dimensions.Split(' ').Select(int.Parse).ToArray();
-            int n = arrDim[0];
-            int m = arrDim[1];
-            int[,] matrix = new int[n, m];
+            string dim = Console.ReadLine();
+            int[] arrDim = dim.Split(' ').Select(int.Parse).ToArray();
+            rows = arrDim[0];
+            cols = arrDim[1];
+            int[][] matrix = new int[rows][];
 
-            for (int i = 0; i < n; i++)
+            // isVisited = new bool[arrDim[0], arrDim[1]];
+            for (int i = 0; i < rows; i++)
             {
-                int[] columns = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
-                for (int j = 0; j < m; j++)
-                {
-                    matrix[i, j] = columns[j];
-                }
+                matrix[i] = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
             }
-
-            FindBestAreaLength(matrix);
+            FindBestArea(matrix);
         }
 
-        static void FindBestAreaLength(int[,] matrix)
+        public static void FindBestArea(int[][] matrix)
         {
-            bestLength = bestNumber = 0;
-
-            for (int row = 0; row < matrix.GetLongLength(0); row++)
+            bestLength = 0;
+            bestNumber = 0;
+            for (int row = 0; row < rows; row++)
             {
-                for (int col = 0; col < matrix.GetLongLength(1); col++)
+                for (int col = 0; col < cols; col++)
                 {
-                    currentNumber = matrix[row, col];
+                    currentNumber = matrix[row][col];
                     currentLength = 0;
-
-                    GetAreaLength(row, col, matrix);
-
+                    GetArea(row, col, matrix);
                     if (currentLength > bestLength)
                     {
                         bestLength = currentLength;
@@ -48,25 +47,25 @@ namespace P6Area
                     }
                 }
             }
-
             Console.WriteLine(bestLength);
         }
 
-        static void GetAreaLength(int row, int col, int[,] matrix)
+        public static void GetArea(int row, int col, int[][] matrix)
         {
-            if (row < 0 || row >= matrix.GetLongLength(0) ||
-                col < 0 || col >= matrix.GetLongLength(1) || matrix[row, col] == 0)
+            if (row < 0 || row >= rows ||
+                col < 0 || col >= cols || matrix[row][col] == 0)
                 return;
-
-            if (matrix[row, col] == currentNumber)
+            //if (matrix[row, col] != currentNumber)
+            //    return;
+            if (matrix[row][col] == currentNumber)
             {
-                matrix[row, col] = 0;
+                matrix[row][col] = 0;
+                //isVisited[row, col] = true;
                 currentLength++;
-
-                GetAreaLength(row - 1, col, matrix);
-                GetAreaLength(row + 1, col, matrix);
-                GetAreaLength(row, col - 1, matrix);
-                GetAreaLength(row, col + 1, matrix);
+                GetArea(row - 1, col, matrix);
+                GetArea(row + 1, col, matrix);
+                GetArea(row, col - 1, matrix);
+                GetArea(row, col + 1, matrix);
             }
         }
     }

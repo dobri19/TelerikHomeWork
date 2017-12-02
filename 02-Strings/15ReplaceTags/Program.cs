@@ -9,7 +9,7 @@ namespace _15ReplaceTags
         {
             string text = Console.ReadLine();
             string patern = @"<a href=""(.*)"">(.*)";
-            string replace = @"[URL=…](…/URL)";
+            // string replace = @"[URL=…](…/URL)";
             var arr = text.Split(new[] { "</a>" }, StringSplitOptions.RemoveEmptyEntries);
             for (int i = 0; i < arr.Length; i++)
             {

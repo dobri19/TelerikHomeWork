@@ -48,16 +48,16 @@ namespace P02
             //Console.WriteLine(Point3D.Center);
 
             //Singleton sng = new Singleton();
-            //Singleton sng = Singleton.Instance;
-            //Singleton sng1 = Singleton.Instance;
-            //if (sng.Equals(sng1))
-            //{
-            //    Console.WriteLine("ok");
-            //}
-            //if (sng == sng1)
-            //{
-            //    Console.WriteLine("nt");
-            //}
+            Singleton sng = Singleton.Instance;
+            Singleton sng1 = Singleton.Instance;
+            if (sng.Equals(sng1))
+            {
+                Console.WriteLine("ok");
+            }
+            if (sng == sng1)
+            {
+                Console.WriteLine("nt");
+            }
         }
     }
 }

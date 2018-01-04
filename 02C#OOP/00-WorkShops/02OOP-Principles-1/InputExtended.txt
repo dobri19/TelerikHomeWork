@@ -1,0 +1,36 @@
+CreateShampoo MyMan Nivea 10.99 Men 1000 EveryDay
+
+CreateCream NobodyMan Sky 555 Men Rose
+CreateToothpaste White Colgate 10.99 Men calcium,fluorid
+
+CreateCategory Shampoos
+
+CreateCategory Creams
+
+CreateCategory Toothpastes
+
+AddToCategory Shampoos MyMan
+
+AddToCategory Creams
+ NobodyMan
+AddToCategory Toothpastes White
+
+AddToShoppingCart MyMan
+
+AddToShoppingCart NobodyMan
+AddToShoppingCart White
+
+ShowCategory Shampoos
+
+ShowCategory Creams
+ShowCategory Toothpastes
+
+TotalPrice
+
+RemoveFromCategory Creams NobodyMan
+
+ShowCategory Creams
+
+RemoveFromShoppingCart NobodyMan
+
+TotalPrice

@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01RecursionExercise", "01RecursionExercise\01RecursionExercise.csproj", "{2162C929-E0B0-43EB-A29F-443DF930E2B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02Bridges", "02Bridges\02Bridges.csproj", "{C8B2026B-16A6-4D0A-BA6D-19D8223AE208}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03BracketMaster", "03BracketMaster\03BracketMaster.csproj", "{2CEAF790-7C75-4E35-ACF6-8EC576850C50}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "00ReverseStringR", "00ReverseStringR\00ReverseStringR.csproj", "{11C8AE34-844F-4E34-A1E7-191B6E619169}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04BracketMasterSashko", "04BracketMasterSashko\04BracketMasterSashko.csproj", "{FCCB4F30-3B87-482B-82A6-E1E844A09791}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05BridgesSashko", "05BridgesSashko\05BridgesSashko.csproj", "{9ABD8EE2-AE49-4392-A9E3-96140002AB11}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2162C929-E0B0-43EB-A29F-443DF930E2B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2162C929-E0B0-43EB-A29F-443DF930E2B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2162C929-E0B0-43EB-A29F-443DF930E2B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2162C929-E0B0-43EB-A29F-443DF930E2B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8B2026B-16A6-4D0A-BA6D-19D8223AE208}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8B2026B-16A6-4D0A-BA6D-19D8223AE208}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8B2026B-16A6-4D0A-BA6D-19D8223AE208}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8B2026B-16A6-4D0A-BA6D-19D8223AE208}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CEAF790-7C75-4E35-ACF6-8EC576850C50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CEAF790-7C75-4E35-ACF6-8EC576850C50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CEAF790-7C75-4E35-ACF6-8EC576850C50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CEAF790-7C75-4E35-ACF6-8EC576850C50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11C8AE34-844F-4E34-A1E7-191B6E619169}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11C8AE34-844F-4E34-A1E7-191B6E619169}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11C8AE34-844F-4E34-A1E7-191B6E619169}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11C8AE34-844F-4E34-A1E7-191B6E619169}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCCB4F30-3B87-482B-82A6-E1E844A09791}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCCB4F30-3B87-482B-82A6-E1E844A09791}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCCB4F30-3B87-482B-82A6-E1E844A09791}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCCB4F30-3B87-482B-82A6-E1E844A09791}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9ABD8EE2-AE49-4392-A9E3-96140002AB11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9ABD8EE2-AE49-4392-A9E3-96140002AB11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9ABD8EE2-AE49-4392-A9E3-96140002AB11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9ABD8EE2-AE49-4392-A9E3-96140002AB11}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4C16D85A-97D2-40E5-AAAC-FBA8FD2D6114}
+	EndGlobalSection
+EndGlobal

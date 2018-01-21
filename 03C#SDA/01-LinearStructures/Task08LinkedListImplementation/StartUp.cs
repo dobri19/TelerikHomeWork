@@ -8,7 +8,7 @@ namespace Task08LinkedListImplementation
         public static void Main(string[] args)
         {
             //LinkedList<int> asd = new LinkedList<int>();
-            LinkedListNode<int> nnn = new LinkedListNode<int>(5);
+            //LinkedListNode<int> nnn = new LinkedListNode<int>(5);
             //asd.AddFirst(nnn);
             //nnn.Next = new LinkedListNode<string>("catty");
 
@@ -36,7 +36,7 @@ namespace Task08LinkedListImplementation
 
             Console.WriteLine();
 
-            int count = list.Count();
+            int count = list.Count;
             Console.WriteLine("Elements count: {0}", count);
             Console.WriteLine();
 

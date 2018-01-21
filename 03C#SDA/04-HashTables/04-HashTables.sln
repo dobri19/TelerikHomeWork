@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01Dictionary", "01Dictionary\01Dictionary.csproj", "{300BA791-66F1-4604-83F0-249641EF7958}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02CountingWords", "02CountingWords\02CountingWords.csproj", "{0D31C5CC-4376-4997-8298-7686865C99CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03MultiDictionary", "03MultiDictionary\03MultiDictionary.csproj", "{102DA319-F471-43D7-BCF0-EA7C891A7828}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04Sets", "04Sets\04Sets.csproj", "{6C8637BB-C9FC-4139-ABE6-9A969620DBB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05DictionaryDemo", "05DictionaryDemo\05DictionaryDemo.csproj", "{93E50965-4D1C-4812-B13F-0CF1593E3CE4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06MostCommon", "06MostCommon\06MostCommon.csproj", "{51AED5B5-4B39-4C97-A014-6260AA1610F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07HashImplementation", "07HashImplementation\07HashImplementation.csproj", "{811A493F-6D7E-493A-AA2A-A65A84588290}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{300BA791-66F1-4604-83F0-249641EF7958}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{300BA791-66F1-4604-83F0-249641EF7958}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{300BA791-66F1-4604-83F0-249641EF7958}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{300BA791-66F1-4604-83F0-249641EF7958}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D31C5CC-4376-4997-8298-7686865C99CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D31C5CC-4376-4997-8298-7686865C99CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D31C5CC-4376-4997-8298-7686865C99CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D31C5CC-4376-4997-8298-7686865C99CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{102DA319-F471-43D7-BCF0-EA7C891A7828}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{102DA319-F471-43D7-BCF0-EA7C891A7828}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{102DA319-F471-43D7-BCF0-EA7C891A7828}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{102DA319-F471-43D7-BCF0-EA7C891A7828}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C8637BB-C9FC-4139-ABE6-9A969620DBB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C8637BB-C9FC-4139-ABE6-9A969620DBB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C8637BB-C9FC-4139-ABE6-9A969620DBB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C8637BB-C9FC-4139-ABE6-9A969620DBB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93E50965-4D1C-4812-B13F-0CF1593E3CE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93E50965-4D1C-4812-B13F-0CF1593E3CE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93E50965-4D1C-4812-B13F-0CF1593E3CE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93E50965-4D1C-4812-B13F-0CF1593E3CE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51AED5B5-4B39-4C97-A014-6260AA1610F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51AED5B5-4B39-4C97-A014-6260AA1610F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51AED5B5-4B39-4C97-A014-6260AA1610F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51AED5B5-4B39-4C97-A014-6260AA1610F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{811A493F-6D7E-493A-AA2A-A65A84588290}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{811A493F-6D7E-493A-AA2A-A65A84588290}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{811A493F-6D7E-493A-AA2A-A65A84588290}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{811A493F-6D7E-493A-AA2A-A65A84588290}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DAAC2555-17B3-4AFC-AA52-DFB351794331}
+	EndGlobalSection
+EndGlobal

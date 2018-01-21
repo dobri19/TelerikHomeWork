@@ -7,45 +7,29 @@ namespace Task00PathOne
     {
         public static void Main(string[] args)
         {
-            //int n = int.Parse(Console.ReadLine());
-            //var shortest = ShortestSequenceOfOperations(15, 1);
+            uint n = uint.Parse(Console.ReadLine());
 
-            //Console.WriteLine(string.Join(", ", shortest));
+            int steps = Divide(n);
+
+            Console.WriteLine(steps);
         }
 
-        //private static SortedSet<int> ShortestSequenceOfOperations(int start, int end)
-        //{
-        //    var set = new SortedSet<int>();
-        //    set.Add(end);
-        //    set.Add(start);
+        public static int Divide(uint n, int depth = 0)
+        {
+            if (n == 1)
+            {
+                return depth;
+            }
 
-        //    while (start > end)
-        //    {
-        //        if ((start % 2 == 0))
-        //        {
-        //            start = start / 2;
-        //            set.Add(start);
-        //        }
-        //        else if ((start / 2 >= start) && (end % 2 == 1))
-        //        {
-        //            end--;
-        //            set.Add(end);
+            if (n % 2 == 0)
+            {
+                return Divide(n / 2, depth + 1);
+            }
 
-        //            end = end / 2;
-        //            set.Add(end);
-        //        }
-        //        else if (end - 2 >= start)
-        //        {
-        //            end -= 2;
-        //            set.Add(end);
-        //        }
-        //        else
-        //        {
-        //            end--;
-        //            set.Add(end);
-        //        }
-        //    }
-        //    return set;
-        //}
+            int d1 = Divide(n + 1, depth + 1);
+            int d2 = Divide(n - 1, depth + 1);
+
+            return Math.Min(d1, d2);
+        }
     }
 }

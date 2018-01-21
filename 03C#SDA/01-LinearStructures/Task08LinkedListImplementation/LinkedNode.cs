@@ -8,52 +8,57 @@ namespace Task08LinkedListImplementation
 {
     public class LinkedNode<T>
     {
-        private LinkedNode<T> next;
-        private LinkedNode<T> previous;
-        private T value;
-        //private NodesAreLinked<T> list;
+        internal LinkedNode<T> next;
+        internal LinkedNode<T> previous;
+        internal T value;
+        internal NodesAreLinked<T> list;
 
         public LinkedNode(T value)
         {
             this.Value = value;
-            this.Next = null;
-            this.Previous = null;
+            //this.Next = null;
+            //this.Previous = null;
         }
 
-        //public NodesAreLinked<T> List()
-        //{
-        //    if (this.Next == null && this.previous == null)
-        //    {
-        //        return null;
-        //    }
-        //    else
-        //    {
-        //        return this.list;
-        //    }
-        //}
+        internal LinkedNode(NodesAreLinked<T> list, T value)
+        {
+            this.list = list;
+            this.Value = value;
+        }
+
+        public NodesAreLinked<T> List
+        {
+            get
+            {
+                return this.list;
+            }
+        }
 
         public LinkedNode<T> Next
         {
             get
             {
-                return this.next;
-            }
-            internal set
-            {
-                this.next = value;
+                //return this.next;
+                if (this.next != null && this.next != this.list.head)
+                {
+                    return this.next;
+                }
+                return null;
             }
         }
+
         public LinkedNode<T> Previous
         {
             get
             {
-                return this.previous;
-            }
-            internal set
-            {
-                this.previous = value;
+                if (this.previous != null && this != this.list.head)
+                {
+                    return this.previous;
+                }
+                return null;
             }
         }
+
         public T Value
         {
             get

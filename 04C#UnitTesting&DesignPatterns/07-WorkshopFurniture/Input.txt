@@ -1,0 +1,37 @@
+CreateCompany FurnitureTelerik 1234567890
+
+ShowCompanyCatalog FurnitureTelerik
+
+CreateTable SmallTable wooden 123.4 0.50 0.45 0.65
+
+CreateChair TestChair leather 99.99 1.20 5
+
+CreateChair MyChair leather 111.56 0.80 4
+
+CreateChair NewChair plastic 80.00 1.00 3
+
+ShowCompanyCatalog FurnitureTelerik
+
+AddFurnitureToCompany FurnitureTelerik SmallTable
+
+AddFurnitureToCompany FurnitureTelerik TestChair
+
+AddFurnitureToCompany FurnitureTelerik MyChair
+
+AddFurnitureToCompany FurnitureTelerik NewChair
+
+ShowCompanyCatalog FurnitureTelerik
+
+RemoveFurnitureFromCompany FurnitureTelerik NewChair
+
+ShowCompanyCatalog FurnitureTelerik
+
+FindFurnitureFromCompany FurnitureTelerik MyChair
+
+FindFurnitureFromCompany FurnitureTelerik NewChair
+
+RemoveFurnitureFromCompany FurnitureTelerik MyChair
+
+RemoveFurnitureFromCompany FurnitureTelerik SmallTable
+
+ShowCompanyCatalog FurnitureTelerik
